@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/history.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="assets/logo/zylance-logo.png"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo/zylance-logo.png" alt="Logo ZYLANCE INVESTASI" />
+        <h2>ZYLANCE</h2>
+      </div>
+      <nav class="menu">
+        <a href="dashboard.html">
+          <img src="assets/icons/user.png" alt="Dashboard" />
+          <span>Dashboard</span>
+        </a>
+        <a href="deposit.html">
+          <img src="assets/icons/wallet.png" alt="Deposit" />
+          <span>Deposit</span>
+        </a>
+        <a href="withdraw.html">
+          <img src="assets/icons/wallet.png" alt="Withdraw" />
+          <span>Penarikan</span>
+        </a>
+        <a href="history.html" class="active">
+          <img src="assets/icons/user.png" alt="History" />
+          <span>Riwayat</span>
+        </a>
+        <a href="#" class="chat-btn" id="chatToggle">
+          <img src="assets/icons/chat.png" alt="Chat" />
+          <span>Live Chat</span>
+        </a>
+        <a href="login.html" class="logout">
+          <img src="assets/icons/logout.png" alt="Keluar" />
+          <span>Keluar</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Riwayat Transaksi</h1>
+        <p>Lihat semua aktivitas akun Anda secara lengkap</p>
+      </header>
+
+      <section class="filter-section">
+        <select id="filterType">
+          <option value="all">Semua Transaksi</option>
+          <option value="deposit">Deposit</option>
+          <option value="withdraw">Penarikan</option>
+          <option value="invest">Investasi</option>
+          <option value="referral">Referral</option>
+          <option value="claim">Claim Harian</option>
+        </select>
+      </section>
+
+      <section class="history-list" id="historyList">
+        <p class="empty">Memuat riwayat transaksi...</p>
+      </section>
+    </main>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <h4>Live Chat</h4>
+        <button id="closeChat">&times;</button>
+      </div>
+      <div class="chat-body" id="chatMessages">
+        <p class="info">Kirim pesan kepada admin kapan saja.</p>
+      </div>
+      <div class="chat-footer">
+        <textarea id="messageInput" placeholder="Ketik pesan..."></textarea>
+        <button id="sendBtn">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/history.js"></script>
+</body>
+    </html>
