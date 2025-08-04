@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="assets/logo/zylance-logo.png"/>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="logo">
+        <img src="assets/logo/zylance-logo.png" alt="Logo ZYLANCE INVESTASI" />
+        <h1>ZYLANCE INVESTASI</h1>
+      </div>
+      <h2>Masuk ke Akun Anda</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Email atau Username</label>
+          <input type="text" id="emailOrUsername" placeholder="Masukkan email atau username" required />
+        </div>
+        <div class="input-group">
+          <label>Kata Sandi</label>
+          <input type="password" id="password" placeholder="Masukkan kata sandi" required />
+        </div>
+        <button type="submit" class="btn-login">Masuk</button>
+      </form>
+      <div class="links">
+        <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+        <a href="admin/login.html" class="admin-link">Masuk sebagai Admin</a>
+      </div>
+    </div>
+    <div class="hero">
+      <img src="assets/background/hero-bg.jpg" alt="Investasi Masa Depan" />
+    </div>
+  </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+  </html>
