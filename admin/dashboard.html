@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="../assets/logo/zylance-logo.png"/>
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="admin-sidebar">
+      <div class="logo">
+        <img src="../assets/logo/zylance-logo.png" alt="Logo" />
+        <h2>Admin Zylance</h2>
+      </div>
+      <nav class="admin-menu">
+        <a href="#" class="active" data-tab="dashboard">Dashboard</a>
+        <a href="#" data-tab="users">Kelola Akun</a>
+        <a href="#" data-tab="deposits">Deposit</a>
+        <a href="#" data-tab="withdraws">Penarikan</a>
+        <a href="#" data-tab="investments">Investasi</a>
+        <a href="#" data-tab="referrals">Referral</a>
+        <a href="#" data-tab="chat">Live Chat</a>
+        <a href="#" data-tab="finance">Keuangan</a>
+        <a href="#" data-tab="settings">Pengaturan</a>
+        <a href="../login.html" class="logout">Keluar</a>
+      </nav>
+    </aside>
 
+    <main class="admin-content">
+      <section id="dashboard" class="tab-content">
+        <h1>Dashboard Admin</h1>
+        <div class="stats-grid">
+          <div class="stat-card total-users">
+            <h3>Total Pengguna</h3>
+            <div class="value" id="totalUsers">0</div>
+          </div>
+          <div class="stat-card total-deposits">
+            <h3>Total Deposit</h3>
+            <div class="value" id="totalDeposits">0</div>
+          </div>
+          <div class="stat-card total-withdraws">
+            <h3>Total Penarikan</h3>
+            <div class="value" id="totalWithdraws">0</div>
+          </div>
+          <div class="stat-card revenue">
+            <h3>Pendapatan Hari Ini</h3>
+            <div class="value" id="revenueToday">0</div>
+          </div>
+        </div>
+
+        <div class="chart-section">
+          <h3>Grafik Aktivitas 7 Hari Terakhir</h3>
+          <canvas id="activityChart"></canvas>
+        </div>
+      </section>
+
+      <section id="users" class="tab-content" style="display: none;">
+        <h1>Kelola Akun Pengguna</h1>
+        <div class="search-add">
+          <input type="text" id="searchUser" placeholder="Cari username atau email..." />
+          <button id="addSaldoBtn">Tambah Saldo</button>
+          <button id="deductSaldoBtn">Kurangi Saldo</button>
+          <button id="deleteUserBtn">Hapus Akun</button>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Saldo</th>
+              <th>Join Date</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="usersList">
+          </tbody>
+        </table>
+      </section>
+
+      <section id="deposits" class="tab-content" style="display: none;">
+        <h1>Verifikasi Deposit</h1>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Nominal</th>
+              <th>Status</th>
+              <th>Tanggal</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="depositsList">
+          </tbody>
+        </table>
+      </section>
+
+      <section id="withdraws" class="tab-content" style="display: none;">
+        <h1>Verifikasi Penarikan</h1>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Nominal</th>
+              <th>Metode</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="withdrawsList">
+          </tbody>
+        </table>
+      </section>
+
+      <section id="chat" class="tab-content" style="display: none;">
+        <h1>Live Chat dengan User</h1>
+        <div class="chat-admin-view">
+          <div class="user-list" id="userChatList">
+          </div>
+          <div class="chat-area">
+            <div class="chat-header">
+              <span id="chatWith">Pilih user untuk memulai obrolan</span>
+            </div>
+            <div class="messages" id="adminMessages">
+              <p class="info">Pilih pengguna dari daftar untuk melihat percakapan.</p>
+            </div>
+            <div class="chat-input">
+              <textarea id="adminReply" placeholder="Balas pesan..." disabled></textarea>
+              <button id="sendReply" disabled>Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="../js/admin.js"></script>
+</body>
+          </html>
