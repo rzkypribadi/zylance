@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="assets/logo/zylance-logo.png"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo/zylance-logo.png" alt="Logo ZYLANCE INVESTASI" />
+        <h2>ZYLANCE</h2>
+      </div>
+      <nav class="menu">
+        <a href="dashboard.html" class="active">
+          <img src="assets/icons/user.png" alt="Dashboard" />
+          <span>Dashboard</span>
+        </a>
+        <a href="deposit.html">
+          <img src="assets/icons/wallet.png" alt="Deposit" />
+          <span>Deposit</span>
+        </a>
+        <a href="withdraw.html">
+          <img src="assets/icons/wallet.png" alt="Withdraw" />
+          <span>Penarikan</span>
+        </a>
+        <a href="#" class="chat-btn" id="chatToggle">
+          <img src="assets/icons/chat.png" alt="Chat" />
+          <span>Live Chat</span>
+        </a>
+        <a href="login.html" class="logout">
+          <img src="assets/icons/logout.png" alt="Keluar" />
+          <span>Keluar</span>
+        </a>
+      </nav>
+    </aside>
 
+    <main class="content">
+      <header class="header">
+        <h1>Selamat Datang di Dashboard</h1>
+        <p>Atur investasi Anda dengan mudah dan aman.</p>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card saldo" id="saldoCard">
+          <h3>Saldo Anda</h3>
+          <div class="value" id="saldoValue">Memuat...</div>
+          <button onclick="location.href='deposit.html'" class="btn-deposit">Deposit Sekarang</button>
+        </div>
+      </section>
+
+      <section class="investment-section">
+        <h2>Produk Investasi Tersedia</h2>
+        <div class="investment-grid" id="investmentGrid">
+        </div>
+      </section>
+
+      <section class="active-investments">
+        <h2>Investasi Aktif Anda</h2>
+        <div class="investment-list" id="activeInvestments">
+          <p class="empty">Anda belum memiliki investasi aktif.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <h4>Live Chat</h4>
+        <button id="closeChat">&times;</button>
+      </div>
+      <div class="chat-body" id="chatMessages">
+        <p class="info">Kirim pesan kepada admin kapan saja.</p>
+      </div>
+      <div class="chat-footer">
+        <textarea id="messageInput" placeholder="Ketik pesan..."></textarea>
+        <button id="sendBtn">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
