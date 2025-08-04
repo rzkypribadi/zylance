@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZYLANCE INVESTASI</title>
+  <link rel="stylesheet" href="css/referral.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="assets/logo/zylance-logo.png"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo/zylance-logo.png" alt="Logo ZYLANCE INVESTASI" />
+        <h2>ZYLANCE</h2>
+      </div>
+      <nav class="menu">
+        <a href="dashboard.html">
+          <img src="assets/icons/user.png" alt="Dashboard" />
+          <span>Dashboard</span>
+        </a>
+        <a href="deposit.html">
+          <img src="assets/icons/wallet.png" alt="Deposit" />
+          <span>Deposit</span>
+        </a>
+        <a href="withdraw.html">
+          <img src="assets/icons/wallet.png" alt="Withdraw" />
+          <span>Penarikan</span>
+        </a>
+        <a href="referral.html" class="active">
+          <img src="assets/icons/user.png" alt="Referral" />
+          <span>Referral</span>
+        </a>
+        <a href="#" class="chat-btn" id="chatToggle">
+          <img src="assets/icons/chat.png" alt="Chat" />
+          <span>Live Chat</span>
+        </a>
+        <a href="login.html" class="logout">
+          <img src="assets/icons/logout.png" alt="Keluar" />
+          <span>Keluar</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Program Referral</h1>
+        <p>Undang teman & dapatkan bonus hingga jutaan rupiah</p>
+      </header>
+
+      <section class="referral-card">
+        <h2>Link Referral Anda</h2>
+        <div class="link-box">
+          <input type="text" id="referralLink" readonly />
+          <button id="copyLink">Salin</button>
+        </div>
+        <p class="info">Bagikan link ini. Setiap orang yang daftar, Anda dapat bonus!</p>
+      </section>
+
+      <section class="rewards">
+        <h2>Hadiah Referral</h2>
+        <div class="reward-grid">
+          <div class="reward-item">
+            <span class="number">1</span>
+            <p><strong>1 Orang</strong>: 15.000</p>
+          </div>
+          <div class="reward-item">
+            <span class="number">2</span>
+            <p><strong>2 Orang</strong>: 40.000</p>
+          </div>
+          <div class="reward-item">
+            <span class="number">3</span>
+            <p><strong>3 Orang</strong>: 70.000</p>
+          </div>
+          <div class="reward-item">
+            <span class="number">4</span>
+            <p><strong>4 Orang</strong>: 100.000</p>
+          </div>
+          <div class="reward-item">
+            <span class="number">5+</span>
+            <p><strong>Setiap Tambahan</strong>: 30.000/orang</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="referral-history">
+        <h2>Riwayat Referral</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Bonus</th>
+              <th>Tanggal</th>
+            </tr>
+          </thead>
+          <tbody id="referralList">
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <h4>Live Chat</h4>
+        <button id="closeChat">&times;</button>
+      </div>
+      <div class="chat-body" id="chatMessages">
+        <p class="info">Kirim pesan kepada admin kapan saja.</p>
+      </div>
+      <div class="chat-footer">
+        <textarea id="messageInput" placeholder="Ketik pesan..."></textarea>
+        <button id="sendBtn">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/referral.js"></script>
+</body>
+            </html>
