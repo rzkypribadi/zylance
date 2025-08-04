@@ -49,7 +49,7 @@ function renderInvestmentProducts(userId, saldo) {
       total: '1.050.000',
       price: 350000
     },
-    {
+{
       id: 'money-sedang',
       name: 'Invest Money Sedang',
       logo: 'assets/logo/invest-money.png',
@@ -58,7 +58,25 @@ function renderInvestmentProducts(userId, saldo) {
       total: '3.000.000',
       price: 450000
     },
-    {
+{
+      id: 'money-pro',
+      name: 'Invest Money Pro',
+      logo: 'assets/logo/invest-money.png',
+      benefit: '200.000/hari',
+      duration: '30 hari',
+      total: '6.000.000',
+      price: 650000
+    },
+{
+      id: 'money-god',
+      name: 'Invest Money God',
+      logo: 'assets/logo/invest-money.png',
+      benefit: '300.000/hari',
+      duration: '35 hari',
+      total: '10.500.000',
+      price: 500000
+    },
+{
       id: 'gold-beginner',
       name: 'Invest Gold Beginner',
       logo: 'assets/logo/invest-gold.png',
@@ -67,14 +85,77 @@ function renderInvestmentProducts(userId, saldo) {
       total: '2.500.000',
       price: 300000
     },
-    {
+{
+      id: 'gold-sedang',
+      name: 'Invest Gold Sedang',
+      logo: 'assets/logo/invest-gold.png',
+      benefit: '250.000/hari',
+      duration: '25 hari',
+      total: '6.250.000',
+      price: 500000
+    },
+{
+      id: 'gold-pro',
+      name: 'Invest Gold Pro',
+      logo: 'assets/logo/invest-gold.png',
+      benefit: '400.000/hari',
+      duration: '30 hari',
+      total: '12.000.000',
+      price: 750000
+    },
+{
+      id: 'gold-god',
+      name: 'Invest Gold God',
+      logo: 'assets/logo/invest-gold.png',
+      benefit: '500.000/hari',
+      duration: '35 hari',
+      total: '17.500.000',
+      price: 1500000
+    },
+{
       id: 'tiktok-beginner',
-      name: 'Invest TikTok Beginner',
+      name: 'Invest Tiktok Beginner',
       logo: 'assets/logo/invest-tiktok.png',
       benefit: '70.000/hari',
       duration: '18 hari',
       total: '1.260.000',
       price: 130000
+    },
+{
+      id: 'tiktok-sedang',
+      name: 'Invest Tiktok Sedang',
+      logo: 'assets/logo/invest-tiktok.png',
+      benefit: '100.000/hari',
+      duration: '20 hari',
+      total: '2.000.000',
+      price: 190000
+    },
+{
+      id: 'tiktok-pro',
+      name: 'Invest Tiktok Pro',
+      logo: 'assets/logo/invest-tiktok.png',
+      benefit: '250.000/hari',
+      duration: '25 hari',
+      total: '6.250.000',
+      price: 900000
+    },
+{
+      id: 'tiktok-god',
+      name: 'Invest Tiktok God',
+      logo: 'assets/logo/invest-tiktok.png',
+      benefit: '350.000/hari',
+      duration: '25 hari',
+      total: '8.750.000',
+      price: 1200000
+    },
+{
+      id: 'invest-seumur-hidup',
+      name: 'Investasi Seumur Hidup',
+      logo: 'assets/logo/invest-lifetime.png',
+      benefit: '750.000/hari',
+      duration: 'Selamanya',
+      total: 'Tak Terhingga',
+      price: 25000000
     }
   ];
 
